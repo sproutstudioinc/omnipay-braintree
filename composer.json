@@ -1,0 +1,38 @@
+{
+    "name": "sproutstudioinc/omnipay-braintree",
+    "type": "library",
+    "description": "Braintreepayments.com gateway for the Omnipay payment processing library",
+    "keywords": [
+        "Braintree",
+        "Braintreepayments",
+        "Braintreepayments.com",
+        "gateway",
+        "merchant",
+        "omnipay",
+        "pay",
+        "payment"
+    ],
+    "homepage": "https://github.com/sproutstudioinc/omnipay-beanstream",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sprout Studio Inc.",
+            "email": "braunson.yager@sproutstudio.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "Sproutstudioinc\\Braintree\\" : "src/" }
+    },
+    "require": {
+        "omnipay/common": "~2.0",
+        "braintree/braintree_php": "~2.0"
+    },
+    "require-dev": {
+        "omnipay/tests": "~2.0"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.0.x-dev"
+        }
+    }
+}
