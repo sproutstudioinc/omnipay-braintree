@@ -1,5 +1,5 @@
 <?php
-namespace Sproutstudioinc\Braintree\Message;
+namespace Omnipay\Braintree\Message;
 
 use Omnipay\Common\Message\AbstractResponse;
 

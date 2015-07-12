@@ -1,5 +1,5 @@
 <?php
-namespace Sproutstudioinc\Braintree;
+namespace Omnipay\Braintree;
 
 use Omnipay\Common\AbstractGateway;
 
@@ -10,6 +10,7 @@ class Gateway extends AbstractGateway
     {
         return 'Braintree';
     }
+
     public function getDefaultParameters()
     {
         return array(
@@ -52,47 +53,47 @@ class Gateway extends AbstractGateway
 
     /**
      * @param array $parameters
-     * @return \Sproutstudioinc\Braintree\Message\AuthorizeRequest
+     * @return \Omnipay\Braintree\Message\AuthorizeRequest
      */
     public function authorize(array $parameters = array())
     {
-        return $this->createRequest('\Sproutstudioinc\Braintree\Message\AuthorizeRequest', $parameters);
+        return $this->createRequest('\Omnipay\Braintree\Message\AuthorizeRequest', $parameters);
     }
 
     /**
      * @param array $parameters
-     * @return \Sproutstudioinc\Braintree\Message\CaptureRequest
+     * @return \Omnipay\Braintree\Message\CaptureRequest
      */
     public function capture(array $parameters = array())
     {
-        return $this->createRequest('\Sproutstudioinc\Braintree\Message\CaptureRequest', $parameters);
+        return $this->createRequest('\Omnipay\Braintree\Message\CaptureRequest', $parameters);
     }
 
     /**
      * @param array $parameters
-     * @return \Sproutstudioinc\Braintree\Message\PurchaseRequest
+     * @return \Omnipay\Braintree\Message\PurchaseRequest
      */
     public function purchase(array $parameters = array())
     {
-        return $this->createRequest('\Sproutstudioinc\Braintree\Message\PurchaseRequest', $parameters);
+        return $this->createRequest('\Omnipay\Braintree\Message\PurchaseRequest', $parameters);
     }
 
     /**
      * @param array $parameters
-     * @return \Sproutstudioinc\Braintree\Message\RefundRequest
+     * @return \Omnipay\Braintree\Message\RefundRequest
      */
     public function refund(array $parameters = array())
     {
-        return $this->createRequest('\Sproutstudioinc\Braintree\Message\RefundRequest', $parameters);
+        return $this->createRequest('\Omnipay\Braintree\Message\RefundRequest', $parameters);
     }
 
     /**
      * @param array $parameters
-     * @return \Sproutstudioinc\Braintree\Message\VoidRequest
+     * @return \Omnipay\Braintree\Message\VoidRequest
      */
     public function void(array $parameters = array())
     {
-        return $this->createRequest('\Sproutstudioinc\Beanstream\Message\VoidRequest', $parameters);
+        return $this->createRequest('\Omnipay\Beanstream\Message\VoidRequest', $parameters);
     }
 
 }

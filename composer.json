@@ -21,7 +21,7 @@
         }
     ],
     "autoload": {
-        "psr-4": { "Sproutstudioinc\\Braintree\\" : "src/" }
+        "psr-4": { "Omnipay\\Braintree\\" : "src/" }
     },
     "require": {
         "omnipay/common": "~2.0",
